@@ -1,0 +1,110 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Полупрозрачный черный слой */
+    z-index: -1;
+}
+header {
+    background-color: #6f4e37; /* Коричневый цвет для верхней части сайта */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+nav {
+    background-color: #8b5e3c; /* Светло-коричневый цвет для навигации */
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transition: all 0.3s ease;
+}
+nav a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #a0a0ff;
+}
+nav {
+    background-color: rgba(76, 76, 130, 0.85);
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transition: all 0.3s ease;
+}
+nav.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+section {
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+section h2 {
+    color: #ffffff;
+    border-bottom: 2px solid #a0a0ff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+section p, section ul {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+footer {
+    background-color: #6f4e37; /* Коричневый цвет для подвала */
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+footer a {
+    color: #003366 !important; /* Темно-синий цвет для ссылки в футере */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #a0a0ff !important; /* Цвет ссылки при наведении */
+}
